@@ -1,11 +1,20 @@
 #ifndef SIMPLELOGGING_H
 
 #include <chrono>
+#include <ctime>
+#include <iostream>
 #include <string>
 
-#include <../src/simple-logging.cc>
+std::chrono::system_clock::time_point simplelog(std::string input)
+{
+    std::chrono::system_clock::time_point time = std::chrono::system_clock::now();
 
-std::chrono::system_clock::time_point simplelog(std::string input);
+    std::time_t tt = std::chrono::system_clock::to_time_t(time);
+
+    std::cout << ctime(&tt) << " " << input << std::endl;
+
+    return time;
+}
 
 #endif
 
