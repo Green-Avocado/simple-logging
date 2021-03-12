@@ -1,4 +1,5 @@
 #ifndef SIMPLELOGGING_H
+#define SIMPELOGGING_H
 
 #include <chrono>
 #include <iostream>
