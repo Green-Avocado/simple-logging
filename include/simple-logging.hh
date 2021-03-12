@@ -1,5 +1,5 @@
 #ifndef SIMPLELOGGING_H
-#define SIMPELOGGING_H
+#define SIMPLELOGGING_H
 
 #include <chrono>
 #include <iostream>
